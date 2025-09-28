@@ -1,0 +1,9 @@
+Q) What is a hosting provider for web hosting? Give some other ways to host your websites.
+>A hosting provider for web hosting is a business that allows a web site to be accessible (hosted) from the internet. 
+In this case, GitHub is acting as the hosting provider, however, other ways to host a website include:
+Netlify, Vercel, Firebase Hosting by Google, or Cloudfare Pages for example.
+
+Q) Does GitHub pages support custom domain names? for eg. if I want to host my website on nchaudhari.com instead of ninadpchaudhari.github.io 
+If yes, Specify the link to appropriate documentation. If not, suggest some workarounds.
+>GitHub pages does support custom domain names which can be done by editing the _config.yml file in your repository then commiting those chnges.
+Resource: https://docs.github.com/en/pages/quickstart#changing-the-title-and-description
