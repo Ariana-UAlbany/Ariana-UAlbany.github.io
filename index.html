@@ -1,0 +1,106 @@
+<!--518 - First Corner on the Web-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="common-style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="container-fluid sticky-top bg-pan-left"><!--Fills entire viewport-->
+    <!--sticky top keeps the banner at the top during scroll-->
+    <nav class="navbar navbar-expand-lg ">
+      <!--by defualt, navbar is spaced apart-->
+      <!--navbar-expand-lg means that it spaces apart when the viewport is smaller-->
+      <a class="navbar-brand" href="index.html"><h1>Homepage</h1></a>
+      <ul class="navbar-nav ms-auto">
+        <!--navbar nav allows us to use the below nav classes-->
+        <!--ms-auto right justifies navs-->
+          <li class="nav-item">
+            <a class="nav-link active " href="#">Home</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="#">About Me</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="#">Gallery</a>
+          </li>
+        </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <section id="featuredQuote">
+      
+    <div class="card text-center">
+  <div class="card-header">
+    Quote of the Month
+  </div>
+  <div class="card-body">
+    <figure>
+  <blockquote class="blockquote">
+      <q>It does not matter how slowly you go as long as you do not stop</q>
+  </blockquote>
+  <figcaption class="blockquote-footer">
+    <cite title="Source Title">Confucious</cite>
+  </figcaption>
+</figure>
+  </div>
+</div>
+</section>
+
+    <section class="container row align-items-start">
+      <div class="col bubble">
+      <h2>Who Am I</h2>
+      <p class="lead">
+        <strong>Hello, I am Ariana!</strong> and I am in the BSMS program for Computer Science. 
+        I will be getting my first Bachelors in spring of next year. 
+        I am from Queens, New York and moved upstate to study. 
+        I am interested in Robotics programming. 
+        I am new to using GitHub and am looking forward to learning about Software Engineering alongside fellow capable students. 
+        I am greatful for any patience given by my peers. 
+        Looking forward to learning more and having fun!
+      </p>
+      <button type="row button" class="btn btn-warning">Learn More About Me</button>
+      </div>
+      <div class="col">
+        <div class="row bubble"></div>
+        <div class="row bubble"></div>
+      </div>
+    </section>
+
+    <section class="row p-3"><!--controls padding =gutter size  -->
+      <h2>Cards</h2>
+      <section class="col-md-2">
+        <article class="card shadow-sm product-card reveal">
+          <div class="card-body">
+            <h2 class="h4 mb-2">Blazing Fast</h2>
+            <p class="mb-0">Apps launch instantly. Multitask without a hiccup.</p>
+          </div>
+        </article>
+      </section>
+      <section class="col-md-2">
+        <article class="card shadow-sm product-card reveal">
+          <div class="card-body">
+            <h2 class="h4 mb-2">Blazing Fast</h2>
+            <p class="mb-0">Apps launch instantly. Multitask without a hiccup.</p>
+          </div>
+        </article>
+      </section>
+      <section class="col-md-2">
+        <article class="card shadow-sm product-card reveal">
+          <div class="card-body">
+            <h2 class="h4 mb-2">Blazing Fast</h2>
+            <p class="mb-0">Apps launch instantly. Multitask without a hiccup.</p>
+          </div>
+        </article>
+      </section>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br>
+    <p>p</p>
+  </main>
+  
+</body>
+</html>
