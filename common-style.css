@@ -1,3 +1,6 @@
+
+
+
 .highlightBox{
   background-color: rgba(0, 0, 0, 0.599);
 }
@@ -5,16 +8,16 @@
 
 .bg-pan-left {
   /*background: linear-gradient(270deg, #ff6b6b, #f7d794, #6a89cc, #ff6b6b);*/
-  background: linear-gradient(270deg,rgb(141, 117, 213),rgb(212, 116, 163),gold, rgb(212, 116, 163),rgb(141, 117, 213));
+  background: linear-gradient(270deg,rgb(183, 159, 255),rgb(255, 144, 198),gold, rgb(255, 144, 198),rgb(183, 159, 255));
   background-size: 600% 100%;
-  animation: bg-pan-left 12s infinite linear alternate;
+  animation: bg-pan-left 12s infinite linear alternate-reverse;
 }
 body {
   background-image: url('img1.jpg'); /* Replace with your image path */
-  background-size: cover; /* This makes the image cover the entire element */
+  background-size: 150% auto; /* This makes the image cover the entire element */
   background-repeat: no-repeat; /* Prevents the image from repeating */
-  background-position: center center; /* Centers the image horizontally and vertically */
   background-attachment: fixed; /* Keeps the background image fixed when scrolling */
+  animation: bg-pan-left-img 100s infinite linear alternate-reverse;
 }
 /*Bubble Container Styling*/
 .bubble{
@@ -41,14 +44,16 @@ body {
   background-color: #f0f8ffe4;
   transition: background-color .6s ease;
 }
-@media (max-width:500px){
+@media (max-width:767px){
   .bubble{margin-left:30px;}/*help recenter on smaller screens*/
   .bubble button{align-self:center;}
-.bubble p{
-  font-size:100%;
-  margin-left:-30px;
-  margin-right:-30px;
+.bubble p {
+  font-size: 1rem;
+  margin: 0 1rem;
 }
+  header{height: max-content !important;}
+  nav ul{height: 110px !important;;}
+
 }
 
 
@@ -84,8 +89,15 @@ body {
 
 /*Header Styles*/
 header{
-  height:100px; /*fixed height so that nav links can span that height*/
+  height:65px; /*fixed height so that nav links can span that height*/
   padding-right: 0 !important; /*so that the nav buttons are flush with rhs of screen*/
+  padding-left: 0 !important;
+  animation: bg-pan-left 12s infinite linear alternate, color-shadow 12s infinite ease-in-out !important;
+}
+
+header h1{
+  margin-left: 50px;
+  padding:20px;
 }
 
 header .navbar,
@@ -99,8 +111,10 @@ header .nav-link {
   padding: 0 !important; /*so that the nav buttons are flush with top of screen*/
 }
 .nav-link {
-  width: 100px;
+  width: 150px;
   justify-content: center;
+  font-size: larger;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 .nav-link.active {
@@ -115,6 +129,8 @@ header .nav-link {
 }
 
 /*Main Styles*/
+
+
 .product-card:hover {
   transform: scale(1.03);
   transition: transform 0.3s ease;
@@ -136,7 +152,7 @@ header .nav-link {
  * animation bg-pan-left
  * ----------------------------------------
  */
-@-webkit-keyframes bg-pan-left {
+ @-webkit-keyframes bg-pan-left {
   0% {
     background-position: 100% 50%;
   }
@@ -152,3 +168,24 @@ header .nav-link {
     background-position: 0% 50%;
   }
 }
+@keyframes bg-pan-left-img {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes color-shadow {
+  0% {
+    box-shadow: 0 0 20px 0px rgb(15, 4, 67);
+  }
+  50% {
+    box-shadow: 0 0 20px 0px rgb(0, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 20px 0px rgb(15, 4, 67);
+  }
+  
+}
+

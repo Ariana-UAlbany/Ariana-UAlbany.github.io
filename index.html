@@ -8,12 +8,12 @@
   <link href="common-style.css" rel="stylesheet">
 </head>
 <body>
-  <header class="container-fluid sticky-top bg-pan-left"><!--Fills entire viewport-->
+  <header class="container-fluid bg-pan-left"><!--Fills entire viewport-->
     <!--sticky top keeps the banner at the top during scroll-->
-    <nav class="navbar navbar-expand-lg ">
+    <nav class="navbar navbar-expand-md">
       <!--by defualt, navbar is spaced apart-->
       <!--navbar-expand-lg means that it spaces apart when the viewport is smaller-->
-      <a class="navbar-brand" href="index.html"><h1>Ariana at UAlbany</h1></a>
+      <a class="navbar-brand" href="index.html"><h1 class="display-5">Ariana Nieves</h1></a>
       <ul class="navbar-nav ms-auto">
         <!--navbar nav allows us to use the below nav classes-->
         <!--ms-auto right justifies navs-->
@@ -24,13 +24,20 @@
             <a class="nav-link " href="#">About Me</a>
           </li>
           <li class="nav-item ">
+            <a class="nav-link " href="#">Blog</a>
+          </li>
+          <li class="nav-item ">
             <a class="nav-link " href="#">Gallery</a>
           </li>
+          
         </ul>
     </nav>
   </header>
 
-  <main class="container">
+  <main class="container-fluid p-4">
+    <div style="background-color: aquamarine;">
+      <p>dk</p>
+    </div>
 
     <section id="featuredQuote">
       
@@ -51,7 +58,7 @@
 </div>
 </section>
 
-    <section class="container row align-items-start">
+    <section class="container-fluid">
       <div class="col bubble">
       <h2>Who Am I</h2>
       <p class="lead">
