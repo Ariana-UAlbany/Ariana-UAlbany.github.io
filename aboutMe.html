@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ariana at UAlbany - Homepage</title>
+  <title>Ariana at UAlbany - About Me</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
   <link href="common-style.css" rel="stylesheet">
 </head>
 <body>
@@ -19,10 +18,10 @@
         <!--navbar nav allows us to use the below nav classes-->
         <!--ms-auto right justifies navs-->
           <li class="nav-item">
-            <a class="nav-link active " href="index.html">Home</a>
+            <a class="nav-link " href="index.html">Home</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link " href="aboutMe.html">About Me</a>
+            <a class="nav-link active" href="aboutMe.html">About Me</a>
           </li>
           <li class="nav-item ">
             <a class="nav-link " href="#">Blog</a>
@@ -36,48 +35,34 @@
   </header>
 
   <main class="container-fluid p-4">
-
-    <section class="container py-5" id="introRow">
-      <div class="d-flex flex-wrap justify-content-center align-items-center gap-3 icon-row">
-        <!--LHS-->
-        <div class="col-auto order-1 order-md-1 d-flex gap-3">
-          <div class="bubble bubble-icon">
-            <i class="bi bi-github glow"></i>
-          </div>
-          <div class="bubble bubble-icon">
-            <i class="bi bi-linkedin glow"></i>          
-          </div>
-        </div>
-        <!--Center-->
-        <div class="col-auto order-3 order-md-2">
-          <div class="bubble"><p class="display-4">Hi, I'm <strong class="glow">Ariana Nieves</strong>!</p></div>
-        </div>
-        <!--RHS-->
-        <div class="col-auto order-2 order-md-3 d-flex gap-3">
-          <div class="bubble bubble-icon">
-            <i class="bi bi-instagram glow" ></i>
-          </div>
-          <div class="bubble bubble-icon">
-            <i class="bi bi-envelope-at-fill glow"></i>          
-          </div>
-        </div>
-
-
-
-      </div>
-
-    </section>
+    <section id="featuredQuote">
+      
+    <div class="card text-center">
+  <div class="card-header">
+    Quote of the Month
+  </div>
+  <div class="card-body">
+    <figure>
+  <blockquote class="blockquote">
+      <q>It does not matter how slowly you go as long as you do not stop</q>
+  </blockquote>
+  <figcaption class="blockquote-footer">
+    <cite title="Source Title">Confucious</cite>
+  </figcaption>
+</figure>
+  </div>
+</div>
+</section>
 
     <section class="container-fluid">
       <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-12">
           <div class="bubble">
             <h2>Who Am I</h2>
       <p class="lead">
         <strong>Hello, I am Ariana!</strong> and I am in the BSMS program for Computer Science at the University at Albany. 
         Looking forward to learning more about Software Engineering and having fun!
       </p>
-      <button type="row button" class="btn btn-warning">Learn More About Me</button>
           </div>
         </div>
         <div class="col-12 col-md-6">
@@ -91,21 +76,7 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12">
-          <div class="bubble">
-            <h2>Gallery</h2>
-      <p class="lead">
-        A journey through my interests in the form of images in my online Gallery! View my recent projects in and outside of the field of CS.
-      </p>
-      <button type="row button" class="btn btn-warning">View Gallery</button>
-          </div>
-        </div>
-            </div>
     </section>
-
-
-      
 
     <section class="row p-3"><!--controls padding =gutter size  -->
       <h2>Cards</h2>
