@@ -1,6 +1,3 @@
-
-
-
 .highlightBox{
   background-color: rgba(0, 0, 0, 0.599);
 }
@@ -34,7 +31,8 @@ body {
   background-repeat: no-repeat; /* Prevents the image from repeating */
   background-attachment: fixed; /* Keeps the background image fixed when scrolling */
   animation: bg-pan-left-img 100s infinite linear alternate-reverse;
-  height: 100%;
+}
+body * {  overflow-x: hidden;
 }
 /*Bubble Container Styling*/
 .bubble-icon{
@@ -201,8 +199,16 @@ header .nav-link {
 /*Main Styles*/
 a{
   text-decoration: none;
-  color:black;
   font-weight: bold;
+}
+a::after{
+  color:#ff00ff;
+}
+main a{
+  color:black;
+}
+footer a{
+  color:white;
 }
 
 .product-card:hover {
