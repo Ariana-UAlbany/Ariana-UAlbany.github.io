@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ariana at UAlbany - About Me</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
   <link href="common-style.css" rel="stylesheet">
 </head>
 <body>
@@ -54,60 +55,170 @@
 </div>
 </section>
 
-    <section class="container-fluid">
+    <section class="container-fluid bubble">
       <div class="row">
-        <div class="col-12">
-          <div class="bubble">
+        <div class="col-md-8">
             <h2>Who Am I</h2>
       <p class="lead">
         <strong>Hello, I am Ariana!</strong> and I am in the BSMS program for Computer Science at the University at Albany. 
-        Looking forward to learning more about Software Engineering and having fun!
+        I will be getting my first Bachelors in spring of next year. I am from Queens, New York and moved upstate to study. 
+        I am interested in Robotics programming and would like to persue a concentration in Machine Learning for my Masters. 
+        In my free time I like to play games. I enjoy listening to lofi music in the background while I study or do chores. 
+        I have a little Maltese dog. I can understand Spanish moderately well. I recently learned that my favorite desert is creme brulee.
       </p>
-          </div>
         </div>
-        <div class="col-12 col-md-6">
-          <div class="bubble">
-            <h2>Blog</h2>
-      <p class="lead">
-        Check out what I've been up to on my educational persuits. Read up on the resources I am using to build my skills!
-        <br>Latest Reading: link.link
-      </p>
-      <button type="row button" class="btn btn-warning">View Blog</button>
-          </div>
+        <div class="col-md-4 text-center"style="padding-top: 30px;">
+            <picture>
+                <source media="(min-width: 300px)"srcset="ariBoat.png">
+                <img src="ariBoat.png" alt="Ariana profile picture on a boat" class="img-fluid rounded img-thumbnail" style="max-height: 250px;">
+            </picture>
         </div>
-      </div>
+        </div>
+        <div class="row">
+            <button type="row button" class="btn btn-warning">Education</button>
+            <button type="row button" class="btn btn-warning">Skills</button>
+            <button type="row button" class="btn btn-warning">Projects</button>
+        </div>
     </section>
 
     <section class="row p-3"><!--controls padding =gutter size  -->
-      <h2>Cards</h2>
-      <section class="col-md-2">
-        <article class="card shadow-sm product-card reveal">
+      <h2>Education Journey</h2>
+      <section class="col-md-3">
+        <article class="bubble product-card reveal">
           <div class="card-body">
-            <h2 class="h4 mb-2">Blazing Fast</h2>
-            <p class="mb-0">Apps launch instantly. Multitask without a hiccup.</p>
+            <h2 class="h4 mb-2">Thomas A. Edison CTE High School</h2>
+            <p class="mb-0">Concentration: Robotics</p>
+            <ul>
+                <li>FRC Robotics Head Programmer</li>
+                <li>NYSSHS VP</li>
+            </ul>
           </div>
         </article>
       </section>
-      <section class="col-md-2">
-        <article class="card shadow-sm product-card reveal">
-          <div class="card-body">
-            <h2 class="h4 mb-2">Blazing Fast</h2>
-            <p class="mb-0">Apps launch instantly. Multitask without a hiccup.</p>
+      <section class="col-md-3">
+        <article class="bubble product-card reveal">
+           <div class="card-body">
+            <h2 class="h4 mb-2">Cooper Union</h2>
+            <p class="mb-0">Major: Mechanical Engineering</p>
+            <ul>
+                                <li style="color:transparent"></li>
+
+                <li>SHPE VP</li>
+                                <li style="color:transparent"></li>
+
+                                                <li style="color:transparent"></li>
+
+            </ul>
           </div>
         </article>
       </section>
-      <section class="col-md-2">
-        <article class="card shadow-sm product-card reveal">
+      <section class="col-md-3">
+        <article class="bubble product-card reveal">
           <div class="card-body">
-            <h2 class="h4 mb-2">Blazing Fast</h2>
-            <p class="mb-0">Apps launch instantly. Multitask without a hiccup.</p>
+            <h2 class="h4 mb-2">SUNY Schenectady</h2>
+            <ul>
+                <li>Computer Science AS</li>
+                <li>Computer Information Systems AAS</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <section class="col-md-3">
+        <article class="bubble product-card reveal">
+          <div class="card-body">
+            <h2 class="h4 mb-2">SUNY University at Albany</h2>
+            <p class="mb-0">Major: Computer Science BS</p>
+            <ul>
+                <li>MSBS Combined Program</li>
+                <li>NSLS member</li>
+            </ul>
           </div>
         </article>
       </section>
     </section>
-    <br><br><br><br><br><br><br><br><br><br>
-    <p>p</p>
+
+    <section class="row p-3"><!--controls padding =gutter size  -->
+      <h2>Skills</h2>
+      <section class="col-md-6">
+        <article class="bubble product-card reveal">
+          <div class="card-body">
+            <h2 class="h4 mb-2">Frontend Development</h2>
+            <ul><li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+        <li>Squarespace</li>
+                <li style="color:transparent"></li>
+
+    </ul>
+          </div>
+        </article>
+      </section>
+      <section class="col-md-6">
+        <article class="bubble product-card reveal">
+          <div class="card-body">
+            <h2 class="h4 mb-2">Backend Development</h2>
+            <ul><li>C</li>
+            <li>C++</li>
+            <li>C#</li>
+            <li>RobotC</li><li>Java</li><li>Scheme</li></ul>
+          </div>
+        </article>
+      </section>
+    </section>
+    <section class="row p-3"><!--controls padding =gutter size  -->
+      <h2>Projects</h2>
+      <section class="col-md-4">
+        <article class="bubble product-card reveal">
+          <div class="card-body">
+            <h2 class="h4 mb-2">OS Simulator</h2>
+            <p class="mb-0"><em>Java</em></p>
+            <ul><li>Cooperative Multitasking</li>
+            <li>Priority Scheduling</li>
+            <li>Device Management</li></ul>
+            <button type="row button" class="btn btn-warning">Learn More</button>
+          </div>
+        </article>
+      </section>
+      <section class="col-md-4">
+        <article class="bubble product-card reveal">
+          <div class="card-body">
+            <h2 class="h4 mb-2">Code Parser & Compiler</h2>
+            <p class="mb-0"><em>Java</em></p>
+            <ul><li>AST structure</li>
+            <li>Visitor Pattern</li>
+            <li>Syntax Error detection</li></ul>
+            <button type="row button" class="btn btn-warning">Learn More</button>
+          </div>
+        </article>
+      </section>
+      <section class="col-md-4">
+        <article class="bubble product-card reveal">
+          <div class="card-body">
+            <h2 class="h4 mb-2">Encryption Implementation</h2>
+            <p class="mb-0"><em>Java</em></p>
+            <ul><li>Image Steganography</li>
+            <li>Textual Transposition Cipher</li>
+                                            <li style="color:transparent"></li>
+
+            </ul>
+            <button type="row button" class="btn btn-warning">Learn More</button>
+          </div>
+        </article>
+      </section>
+    </section>
   </main>
   
+  <footer>
+    <p>Author: Ariana Nieves
+      <br><a href="mailto:acnieves@albany.edu">acnieves@albany.edu</a>
+    </p>
+    <div>
+      <i class="bi bi-github footer-icon"></i>
+      <i class="bi bi-linkedin footer-icon"></i> 
+      <i class="bi bi-instagram footer-icon" ></i>         
+
+    </div>
+  </footer>
 </body>
 </html>

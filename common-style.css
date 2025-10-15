@@ -34,6 +34,7 @@ body {
   background-repeat: no-repeat; /* Prevents the image from repeating */
   background-attachment: fixed; /* Keeps the background image fixed when scrolling */
   animation: bg-pan-left-img 100s infinite linear alternate-reverse;
+  height: 100%;
 }
 /*Bubble Container Styling*/
 .bubble-icon{
@@ -73,10 +74,15 @@ body {
 .icon-row{
   flex-wrap: nowrap;
 }
-@media (max-width:1200px){
+@media (max-width:1400px){
   .bubble-icon{
     font-size:2rem;
     margin:0;
+  }
+}
+@media (max-width:1200px){
+  .bubble-icon{
+    display: none;
   }
 }
 
@@ -92,8 +98,11 @@ section{margin:0 !important;
 }
 #introRow{
   background-color: blue;
-  display:none;
+  display: none;
 }
+.bubble .btn{
+    margin-top:30px;
+  }
 
 @media (max-width:500px){
   .navbar-brand {width:100%;align-items: center; margin:0}
@@ -106,11 +115,14 @@ section{margin:0 !important;
     width:100%;
   }
   header ul .nav-link {width:100%;}
-  
+  .bubble {
+    padding: 30px !important;
+  }
+  .bubble h2{text-align: center;}
 }
 
   header{height: max-content !important;}
-  nav ul{height: 110px !important;;}
+  nav ul{height: 110px !important;}
 
 }
 
@@ -187,13 +199,30 @@ header .nav-link {
 }
 
 /*Main Styles*/
-
+a{
+  text-decoration: none;
+  color:black;
+  font-weight: bold;
+}
 
 .product-card:hover {
   transform: scale(1.03);
   transition: transform 0.3s ease;
 }
 
+/*Footer Styles*/
+footer {
+  height:200px;
+  padding: 40px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.784);
+  color: white !important;
+  border-top: rgba(0, 0, 0, 0.26) solid 20px;
+}
+.footer-icon{
+  padding: 0 5px 0 5px;
+
+}
 
 
 
