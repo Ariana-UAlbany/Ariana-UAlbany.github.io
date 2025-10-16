@@ -47,30 +47,11 @@
   </header>
 
   <main class="container-fluid p-4">
-    <section id="featuredQuote">
-      
-    <div class="card text-center">
-  <div class="card-header">
-    Quote of the Month
-  </div>
-  <div class="card-body">
-    <figure>
-  <blockquote class="blockquote">
-      <q>It does not matter how slowly you go as long as you do not stop</q>
-  </blockquote>
-  <figcaption class="blockquote-footer">
-    <cite title="Source Title">Confucious</cite>
-  </figcaption>
-</figure>
-  </div>
-</div>
-</section>
-
     <section class="container-fluid" style="padding-right:10px">
             <h2 class="display-6">Who Am I</h2>
 
       <div class="bubble">
-      <div class="row">
+      <div class="row d-flex align-items-center">
         <div class="col-md-8">
         <h3 class="h4 mb-2">Hello, I am Ariana!</h2>
             
@@ -81,13 +62,8 @@
         In my free time I like to play games. I enjoy listening to lofi music in the background while I study or do chores. 
         I have a little Maltese dog. I can understand Spanish moderately well. I recently learned that my favorite desert is creme brulee.
       </p>
-      <div class="my-5 d-flex justify-content-around" style="width:50%">
-          <button type="row button" class="btn btn-warning">Education</button>
-            <button type="row button" class="btn btn-warning">Skills</button>
-            <button type="row button" class="btn btn-warning">Projects</button>
-            </div>
         </div>
-        <div class="col-md-4 text-center"style="padding: 50px 0 50px 0;">
+        <div class="col-md-4 text-center"style="padding: 10px 0 10px 0;">
             <picture>
                 <source media="(min-width: 300px)"srcset="ariBoat.png">
                 <img src="ariBoat.png" alt="Ariana profile picture on a boat" class="img-fluid rounded-pill img-thumbnail" style="max-height: 250px;">
@@ -97,56 +73,58 @@
         </div>
     </section>
 
-    <section class="row p-3"><!--controls padding =gutter size  -->
+    <section class="row p-3 "><!--controls padding =gutter size  -->
       <h2 class="display-6">Education Journey</h2>
-      <section class="col-md-3">
-        <article class="bubble product-card reveal">
+      <section class="col-md-3 text-center">
+        <article class="bubble product-card reveal h-100 education">
           <div class="card-body">
             <h3 class="h4 mb-2">Thomas A. Edison CTE High School</h2>
             <p class="mb-0">Concentration: Robotics</p>
-            <ul>
-                <li>FRC Robotics Head Programmer</li>
-                <li>NYSSHS VP</li>
+            <ul class="list-group">
+
+                <li class="list-group-item">FRC Robotics Head Programmer</li>
+                <li class="list-group-item">NYSSHS Vice President</li>
+
             </ul>
           </div>
         </article>
       </section>
-      <section class="col-md-3">
-        <article class="bubble product-card reveal">
+      <section class="col-md-3 text-center">
+        <article class="bubble product-card reveal h-100 education">
            <div class="card-body">
-            <h3 class="h4 mb-2">Cooper Union</h2>
+            <h3 class="h4 mb-2">The Cooper Union</h2>
             <p class="mb-0">Major: Mechanical Engineering</p>
-            <ul>
-                                <li style="color:transparent"></li>
+            <ul class="list-group">
 
-                <li>SHPE VP</li>
-                                <li style="color:transparent"></li>
+                <li class="list-group-item">SHPE Vice President</li>
+                <li class="list-group-item">Admission Rate: 22%</li>
 
-                                                <li style="color:transparent"></li>
 
             </ul>
           </div>
         </article>
       </section>
-      <section class="col-md-3">
-        <article class="bubble product-card reveal">
+      <section class="col-md-3 text-center">
+        <article class="bubble product-card reveal h-100 education">
           <div class="card-body">
             <h3 class="h4 mb-2">SUNY Schenectady</h2>
-            <ul>
-                <li>Computer Science AS</li>
-                <li>Computer Information Systems AAS</li>
+                          <p class="mb-0">Major: CS and CIS</p>
+
+            <ul class="list-group">
+                <li class="list-group-item">Computer Science AS</li>
+                <li class="list-group-item">Computer Information Systems AAS</li>
             </ul>
           </div>
         </article>
       </section>
-      <section class="col-md-3">
-        <article class="bubble product-card reveal">
+      <section class="col-md-3 text-center">
+        <article class="bubble product-card reveal h-100 education">
           <div class="card-body">
             <h3 class="h4 mb-2">SUNY University at Albany</h2>
             <p class="mb-0">Major: Computer Science BS</p>
-            <ul>
-                <li>MSBS Combined Program</li>
-                <li>NSLS member</li>
+            <ul class="list-group ">
+                <li class="list-group-item">MSBS Combined Program</li>
+                <li class="list-group-item">NSLS Online Member</li>
             </ul>
           </div>
         </article>
@@ -159,11 +137,14 @@
         <article class="bubble product-card reveal">
           <div class="card-body">
             <h3 class="h4 mb-2">Frontend Development</h2>
-            <ul><li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-        <li>Squarespace</li>
+            <ul class="list-group list-group-horizontal">
+                              <li style="color:transparent"></li>
+
+            <li class="list-group-item">HTML</li>
+            <li class="list-group-item">CSS</li>
+            <li class="list-group-item">JavaScript</li>
+            <li class="list-group-item">React</li>
+            <li class="list-group-item">Squarespace</li>
                 <li style="color:transparent"></li>
 
     </ul>
@@ -174,52 +155,63 @@
         <article class="bubble product-card reveal">
           <div class="card-body">
             <h3 class="h4 mb-2">Backend Development</h2>
-            <ul><li>C</li>
-            <li>C++</li>
-            <li>C#</li>
-            <li>RobotC</li><li>Java</li><li>Scheme</li></ul>
+            <ul class="list-group list-group-horizontal">
+                              <li style="color:transparent"></li>
+
+                <li class="list-group-item">&nbsp;&nbsp;C&nbsp;&nbsp;</li>
+            <li class="list-group-item">C++</li>
+            <li class="list-group-item">&nbsp;C#&nbsp;</li>
+            <li class="list-group-item">RobotC</li>
+            <li class="list-group-item">Java</li>
+            <li class="list-group-item">Scheme</li>
+                          <li style="color:transparent"></li>
+</ul>
           </div>
         </article>
       </section>
     </section>
     <section class="row p-3"><!--controls padding =gutter size  -->
       <h2 class="display-6">Projects</h2>
-      <section class="col-md-4">
-        <article class="bubble product-card reveal">
+      <section class="col-md-4 ">
+        <article class="bubble product-card reveal h-100">
           <div class="card-body">
             <h3 class="h4 mb-2">OS Simulator</h2>
             <p class="mb-0"><em>Java</em></p>
-            <ul><li>Cooperative Multitasking</li>
-            <li>Priority Scheduling</li>
-            <li>Device Management</li></ul>
-            <button type="row button" class="btn btn-warning">Learn More</button>
+            <ul class="list-group">
+            <li class="list-group-item">Cooperative Multitasking</li>
+            <li class="list-group-item">Priority Scheduling</li>
+            <li class="list-group-item">Device Management</li></ul>
           </div>
+                      <button type="row button" class="btn btn-warning"><a href="blog.html#OS">Learn More</a></button>
+
         </article>
       </section>
       <section class="col-md-4">
-        <article class="bubble product-card reveal">
+        <article class="bubble product-card reveal h-100">
           <div class="card-body">
             <h3 class="h4 mb-2">Code Parser & Compiler</h2>
             <p class="mb-0"><em>Java</em></p>
-            <ul><li>AST structure</li>
-            <li>Visitor Pattern</li>
-            <li>Syntax Error detection</li></ul>
-            <button type="row button" class="btn btn-warning">Learn More</button>
+            <ul class="list-group">
+              <li class="list-group-item">AST structure</li>
+            <li class="list-group-item">Visitor Pattern</li>
+            <li class="list-group-item">Syntax Error detection</li></ul>
           </div>
+                      <button type="row button" class="btn btn-warning" disabled>Learn More</button>
+
         </article>
       </section>
       <section class="col-md-4">
-        <article class="bubble product-card reveal">
+        <article class="bubble product-card reveal h-100">
           <div class="card-body">
             <h3 class="h4 mb-2">Encryption Implementation</h2>
             <p class="mb-0"><em>Java</em></p>
-            <ul><li>Image Steganography</li>
-            <li>Textual Transposition Cipher</li>
-                                            <li style="color:transparent"></li>
-
+            <ul class="list-group">
+              <li class="list-group-item">Image Steganography</li>
+            <li class="list-group-item">Textual Transposition Cipher</li>
             </ul>
-            <button type="row button" class="btn btn-warning">Learn More</button>
           </div>
+                      <button type="row button" class="btn btn-warning" disabled>Learn More</button>
+
         </article>
       </section>
     </section>

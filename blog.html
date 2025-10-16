@@ -36,7 +36,118 @@
   </header>
 
   <main class="container-fluid p-4">
-    
+    <!--Quote-->
+    <section id="featuredQuote">
+      
+    <div class="card text-center">
+  <div class="card-header">
+    Quote of the Month
+  </div>
+  <div class="card-body">
+    <figure>
+  <blockquote class="blockquote">
+      <q>It does not matter how slowly you go as long as you do not stop</q>
+  </blockquote>
+  <figcaption class="blockquote-footer">
+    <cite title="Source Title">Confucious</cite>
+  </figcaption>
+</figure>
+  </div>
+</div>
+</section>
+    <!--Horizontal Card-->
+    <div class="card mb-3 bubble bubble-card mx-auto"style="max-width: 90%;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="strategy.png" class="img-fluid h-100 bubble-card-img-left" alt="Strategy Design Pattern Thumbnail" style="object-fit: cover; object-position: left;">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Strategy Design Pattern Presentation</h5>
+                <p class="card-text"><small class="text-muted">October 10 2025</small></p>
+        <p class="card-text">What is the problem that thee Strategy Design Pattern aims to solve and how?</p>
+        <blockquote>Behavioral Issues arise when the same job can be done in many different ways. 
+            Code can become:
+            <ol>
+                <li><strong>BLOATED</strong> The more behaviors exist to complete a task, the larger the code can get. This causes an issue with scalability because as code gets bigger, it gets harder to read, test and maintain.</li>
+                <li><strong>HARD TO EXTEND</strong> Open/Closed means that code should be open to addition, but closed for modification. Adding new behaviors means modifying the main conditional each time which risks breaking existing logic.</li>
+                <li><strong>PRONE TO MERGE CONFLICTS</strong> because there is a higher chance for developers to be working on the same code block when modifying behaviors</li>
+            </ol>
+        </blockquote>    
+      </div>
+    </div>
+  </div>
+</div>
+<!--end of Card-->
+
+<!--Horizontal Card-->
+    <div class="card mb-3 bubble bubble-card mx-auto"style="max-width: 90%;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="prototype.png" class="img-fluid h-100 bubble-card-img-left" alt="Strategy Design Pattern Thumbnail" style="object-fit: cover; object-position: left;">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Prototyping a Medication Management Application</h5>
+                <p class="card-text"><small class="text-muted">October 9 2025</small></p>
+        <p class="card-text">Formative stage wireframe sketches and process interactions for a medication management app.
+            Designed for elderly people who have many prescriptions and younger adults who struggle to take medicine on time.
+        </p>
+        <ul>
+            <li>Audience
+                <ul>
+                    <li>Target Persona: Eldery users with mamy prescriptions</li>
+                    <li>Fringe Persona: Young users with ADHD</li>
+                </ul>
+            </li>
+            <li>User Goals
+            <ul>
+                <li>Symptom Tracking</li>
+                <li>Pill Refill Alerts</li>
+                <li>Medication Consistency Trends</li>
+            </ul>
+            </li>
+            <li>Next Steps
+                <ul>
+                    <li>Figma Mockups</li>
+                    <li>Heuristic Evaluation</li>
+                    <li>Cognitive Walkthrough</li>
+                </ul>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end of Card-->
+<!--Horizontal Card-->
+    <div class="card mb-3 bubble bubble-card mx-auto"style="max-width: 90%;" id="OS">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="simulator.png" class="img-fluid h-100 bubble-card-img-left" alt="Strategy Design Pattern Thumbnail" style="object-fit: cover; object-position: left;">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Designing an OS Simulator</h5>
+                <p class="card-text"><small class="text-muted">October 6 2025</small></p>
+        <p class="card-text">Simulate cooperative multitasking operating system using Java<br>
+            <strong>UPDATE:</strong> Added priority scheduler
+        </p>
+        <blockquote>
+            <p>On startup, the OS creates processes to run. 
+                When a process' quantum expires, the static Kernel object takes control and switches to 
+                another process waiting in queue. In this update, the queue is divided into three different queues based on priority.
+                A process that starts as realtime gets demoted to interactive if it reaches timeout several times in succession.
+                An interactive process then demotes to background. Switching a process selects a priority queue using a probabilistic model.
+                Cooperation is facilitated via a binary semaphore.
+            </p>
+        </blockquote>    
+      </div>
+    </div>
+  </div>
+</div>
+<!--end of Card-->
+
   </main>
   
   <footer>

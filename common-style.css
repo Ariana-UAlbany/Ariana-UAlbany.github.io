@@ -67,6 +67,38 @@ body {
   background-color: #f0f8ffe4;
   transition: background-color .6s ease;
 }
+.bubble-card{
+  margin:0;
+  padding:0;
+  box-shadow: 0 0 20px rgb(9, 16, 85);
+      transition: transform 0.3s ease;
+
+}
+.bubble-card:hover{
+  transform: scale(1.01);
+    transition: transform 0.3s ease;
+
+}
+.bubble-card-img-left{
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+.list-group-horizontal .list-group-item{
+    width:fit-content;
+}
+.list-group-item{
+  text-align: center;
+  background-color: rgba(127, 167, 176, 0.706);
+  margin:5px;
+  border-radius:5em !important;
+  padding: 10px 20px 10px 20px;
+}
+.education h3{
+  height:100px;
+  border-bottom: 1px solid rgb(156, 193, 239);
+}
+
 /*Responsiveness*/
 @media (max-width: 800px) {
   body {
