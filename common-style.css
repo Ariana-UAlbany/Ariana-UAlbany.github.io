@@ -68,6 +68,15 @@ body {
   transition: background-color .6s ease;
 }
 /*Responsiveness*/
+@media (max-width: 800px) {
+  body {
+    background-size: cover !important;
+    background-position: center center !important;
+    background-attachment: scroll !important;
+  }
+}
+
+
 .icon-row{
   flex-wrap: nowrap;
 }
