@@ -8,7 +8,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
   <link href="common-style.css" rel="stylesheet">
 <style>
-  h2{margin-left:80px;}
+  h2{margin-left:60px;}
+  img{  transition: transform 0.3s ease, box-shadow 0.7s ease;
+}
+  img:hover{
+    transform: scale(1.08);
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 40px #ffa0ffe0;
+  }
 </style>
 
 </head>
@@ -29,10 +36,10 @@
             <a class="nav-link active" href="aboutMe.html">About Me</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link " href="#">Blog</a>
+            <a class="nav-link " href="blog.html">Blog</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link " href="#">Gallery</a>
+            <a class="nav-link " href="gallery.html">Gallery</a>
           </li>
           
         </ul>
@@ -59,7 +66,7 @@
 </div>
 </section>
 
-    <section class="container-fluid">
+    <section class="container-fluid" style="padding-right:10px">
             <h2 class="display-6">Who Am I</h2>
 
       <div class="bubble">
@@ -74,24 +81,24 @@
         In my free time I like to play games. I enjoy listening to lofi music in the background while I study or do chores. 
         I have a little Maltese dog. I can understand Spanish moderately well. I recently learned that my favorite desert is creme brulee.
       </p>
-        </div>
-        <div class="col-md-4 text-center"style="padding-top: 30px;">
-            <picture>
-                <source media="(min-width: 300px)"srcset="ariBoat.png">
-                <img src="ariBoat.png" alt="Ariana profile picture on a boat" class="img-fluid rounded img-thumbnail" style="max-height: 250px;">
-            </picture>
-        </div>
-        </div>
-        <div class="row">
-            <button type="row button" class="btn btn-warning">Education</button>
+      <div class="my-5 d-flex justify-content-around" style="width:50%">
+          <button type="row button" class="btn btn-warning">Education</button>
             <button type="row button" class="btn btn-warning">Skills</button>
             <button type="row button" class="btn btn-warning">Projects</button>
+            </div>
+        </div>
+        <div class="col-md-4 text-center"style="padding: 50px 0 50px 0;">
+            <picture>
+                <source media="(min-width: 300px)"srcset="ariBoat.png">
+                <img src="ariBoat.png" alt="Ariana profile picture on a boat" class="img-fluid rounded-pill img-thumbnail" style="max-height: 250px;">
+            </picture>
+        </div>
         </div>
         </div>
     </section>
 
     <section class="row p-3"><!--controls padding =gutter size  -->
-      <h2>Education Journey</h2>
+      <h2 class="display-6">Education Journey</h2>
       <section class="col-md-3">
         <article class="bubble product-card reveal">
           <div class="card-body">
@@ -147,7 +154,7 @@
     </section>
 
     <section class="row p-3"><!--controls padding =gutter size  -->
-      <h2>Skills</h2>
+      <h2 class="display-6">Skills</h2>
       <section class="col-md-6">
         <article class="bubble product-card reveal">
           <div class="card-body">
@@ -176,7 +183,7 @@
       </section>
     </section>
     <section class="row p-3"><!--controls padding =gutter size  -->
-      <h2>Projects</h2>
+      <h2 class="display-6">Projects</h2>
       <section class="col-md-4">
         <article class="bubble product-card reveal">
           <div class="card-body">
