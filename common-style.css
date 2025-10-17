@@ -130,10 +130,10 @@ body {
   flex-wrap: nowrap;
 }
 @media (max-width:500px){
-  section{
-    padding: 0px !important;
+  article{
+    margin: 5px 0 5px 0 !important;
   }
-  main section h2, h3, .bubble p{text-align: center;}
+  main article h2, h3, .bubble p{text-align: center;}
 
   .bubble{margin: 0 0 10px 0 !important;}
   main .container-fluid{padding-left: 4px !important;}
@@ -159,7 +159,7 @@ body {
   font-size: 1rem;
   margin: 0 1rem;
 }
-section{margin:10px 0 10px 0 !important;
+section > article{padding:10px 0 10px 0 !important;
   width:100% !important;
 }
 #introRow{
@@ -279,10 +279,13 @@ button a{
 .bubble a:visited{
   color: rgb(42, 12, 175);
 }
-button a:visited{color:black !important;}
+button a:visited{color:white !important;}
 button a{
-  color:black;
+  color: white !important;;
+  font-size:18pt;
+  font-weight: bold;
 }
+.bubble button{background-color: rgba(0, 0, 0, 0.808) !important; padding: 20px !important; border-color: black!important;}
 
 
 .product-card:hover {

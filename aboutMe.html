@@ -24,7 +24,7 @@
     <nav class="navbar navbar-expand-lg">
       <!--by defualt, navbar is spaced apart-->
       <!--navbar-expand-lg means that it spaces apart when the viewport is smaller-->
-      <a class="navbar-brand" href="index.html"><h1 class="display-5">Ariana Nieves</h1></a>
+      <a class="navbar-brand"><h1 class="display-5">Ariana Nieves</h1></a>
       <ul class="navbar-nav ms-auto">
         <!--navbar nav allows us to use the below nav classes-->
         <!--ms-auto right justifies navs-->
@@ -46,15 +46,15 @@
   </header>
 
   <main class="container-fluid p-4">
-    <section class="container-fluid">
+    <article class="container-fluid">
             <h2 class="display-6">Who Am I</h2>
 
-      <article class="bubble">
+      <section class="bubble">
       <div class="row d-flex align-items-center">
         <div class="col-md-8">
-        <h3 class="h4 mb-2">Hello, I am Ariana!</h2>
+        <h3 class="h3 text-center">Hello, I am Ariana!</h2>
             
-      <p class="lead">
+      <p class="lead text-center">
         I am in the BSMS program for Computer Science at the University at Albany. 
         I will be getting my first Bachelors in spring of next year. I am from Queens, New York and moved upstate to study. 
         I am interested in Robotics programming and would like to persue a concentration in Machine Learning for my Masters. 
@@ -62,27 +62,27 @@
         I have a little Maltese dog. I can understand Spanish moderately well. I recently learned that my favorite desert is creme brulee.
       </p>
         </div>
-        <figure class="col-md-4 text-center"style="padding: 10px 0 10px 0;">
+        <figure class="col-md-4 text-center"style="padding: 10px 0 10px 0; margin:0">
             <picture>
                 <source media="(min-width: 300px)"srcset="img/ari.jpeg">
                 <img src="img/ariBoat.png" alt="Ariana profile picture on a boat" class="img-fluid rounded-pill img-thumbnail" style="max-height: 300px;">
             </picture>
           </figure>
         </div>
-      </article>
-    </section>
+      </section>
+    </article>
     <!--Education-->
     <section class="row p-3 "><!--controls padding =gutter size  -->
       <h2 class="display-6">Education Journey</h2>
       <article class="col-md-3 text-center">
         <section class="bubble product-card reveal h-100 education">
           <div class="card-body">
-            <h3 class="h4 mb-2">Thomas A. Edison CTE High School</h2>
+            <h3 class="h4 mb-2">Thomas A. Edison <abbr title="Career in Technical Education"class="initialism">CTE</abbr> High School</h2>
             <p class="mb-0">Concentration: Robotics</p>
             <ul class="list-group list-group-md-wrap">
 
-                <li class="list-group-item">FRC Robotics Head Programmer</li>
-                <li class="list-group-item">NYSSHS Vice President</li>
+                <li class="list-group-item"><abbr title="First Robotics Competition"class="initialism">FRC</abbr> Robotics Head Programmer</li>
+                <li class="list-group-item"><abbr title="New York State Science Honor Society"class="initialism">NYSSHS</abbr> Vice President</li>
 
             </ul>
           </div>
@@ -96,7 +96,7 @@
             <p class="mb-0">Major: Mechanical Engineering</p>
             <ul class="list-group list-group-md-wrap">
 
-                <li class="list-group-item">SHPE Vice President</li>
+                <li class="list-group-item"><abbr title="Society of Hispanic Professional Engineers"class="initialism">SHPE</abbr> Vice President</li>
                 <li class="list-group-item">Admission Rate: 22%</li>
 
 
@@ -109,11 +109,11 @@
         <section class="bubble product-card reveal h-100 education">
           <div class="card-body">
             <h3 class="h4 mb-2">SUNY Schenectady</h2>
-                          <p class="mb-0">Major: CS and CIS</p>
+                          <p class="mb-0">Major: <abbr title="Computer Science" class="initialism">CS</abbr> and <abbr title="Computer Information Systems" class="initialism">CIS</abbr></p>
 
             <ul class="list-group list-group-md-wrap">
-                <li class="list-group-item">Computer Science AS</li>
-                <li class="list-group-item">Computer Information Systems AAS</li>
+                <li class="list-group-item">Computer Science <abbr title="Associate of Science" class="initialism">AS</abbr></li>
+                <li class="list-group-item">Computer Information Systems <abbr title="Associate of Applied Science" class="initialism">AAS</abbr></li>
             </ul>
           </div>
         </section>
@@ -122,11 +122,11 @@
       <article class="col-md-3 text-center">
         <section class="bubble product-card reveal h-100 education">
           <div class="card-body">
-            <h3 class="h4 mb-2">SUNY University at Albany</h2>
-            <p class="mb-0">Major: Computer Science BS</p>
+            <h3 class="h4 mb-2"><abbr title="State University of New York" class="initialism">SUNY</abbr> University at Albany</h2>
+            <p class="mb-0">Major: Computer Science <abbr title="Bachelor of Science" class="initialism">BS</abbr></p>
             <ul class="list-group list-group-md-wrap">
-                <li class="list-group-item">MSBS Combined Program</li>
-                <li class="list-group-item">NSLS Online Member</li>
+                <li class="list-group-item"><abbr title="Master of Science Bachelor of Science" class="initialism">MSBS</abbr> Combined Program</li>
+                <li class="list-group-item"><abbr title="National Society of Leadership and Success" class="initialism">NSLS</abbr> Online Member</li>
             </ul>
           </div>
         </section>
@@ -140,8 +140,8 @@
           <div class="card-body">
             <h3 class="h4 mb-2">Frontend Development</h2>
             <ul class="list-group list-group-horizontal list-group-md-wrap">
-            <li class="list-group-item">HTML</li>
-            <li class="list-group-item">CSS</li>
+            <li class="list-group-item"><abbr title="Hypertext Markup Language" class="initialism">HTML</abbr></li>
+            <li class="list-group-item"><abbr title="Cascading Style Sheet" class="initialism">CSS</abbr></li>
             <li class="list-group-item">JavaScript</li>
             <li class="list-group-item">React</li>
             <li class="list-group-item">Squarespace</li>
@@ -172,7 +172,7 @@
       <article class="col-md-4 ">
         <section class="bubble product-card reveal h-100">
           <div class="card-body">
-            <h3 class="h4 mb-2">OS Simulator</h2>
+            <h3 class="h4 mb-2"><abbr title="Operating System" class="initialism">OS</abbr> Simulator</h2>
             <p><em>Java</em></p>
             <ul class="list-group">
             <li class="list-group-item">Cooperative Multitasking</li>
@@ -190,7 +190,7 @@
             <h3 class="h4 mb-2">Code Parser & Compiler</h2>
             <p><em>Java</em></p>
             <ul class="list-group">
-              <li class="list-group-item">AST structure</li>
+              <li class="list-group-item"><abbr title="Abstract Syntax Tree" class="initialism">AST</abbr> structure</li>
             <li class="list-group-item">Visitor Pattern</li>
             <li class="list-group-item">Syntax Error detection</li></ul>
           </div>
