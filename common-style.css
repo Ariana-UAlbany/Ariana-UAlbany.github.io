@@ -26,7 +26,7 @@
   animation: bg-pan-left 12s infinite linear alternate-reverse;
 }
 body {
-  background-image: url('img1.jpg'); /* Replace with your image path */
+  background-image: url('img/img1.jpg'); /* Replace with your image path */
   background-size: 150% auto; /* This makes the image cover the entire element */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   background-attachment: fixed; /* Keeps the background image fixed when scrolling */
@@ -159,7 +159,7 @@ section{margin:0 !important;
   .bubble h2{text-align: center;}
 }
 
-  header{height: max-content !important;}
+  header:first-of-type{height: max-content !important;}
   nav ul{height: 110px !important;}
 
 }
@@ -196,7 +196,7 @@ section{margin:0 !important;
 }
 
 /*Header Styles*/
-header{
+body > header{ /*direct child of body that is a header*/
   height:70px; /*fixed height so that nav links can span that height*/
   padding-right: 0 !important; /*so that the nav buttons are flush with rhs of screen*/
   padding-left: 0 !important;
@@ -237,19 +237,20 @@ header .nav-link {
 }
 
 /*Main Styles*/
-a{
+button a{
   text-decoration: none;
-  font-weight: bold;
 }
-a::after{
+.bubble a{
   color:#ff00ff;
 }
-main a{
+.bubble a:visited{
+  color: rgb(42, 12, 175);
+}
+button a:visited{color:black !important;}
+button a{
   color:black;
 }
-footer a{
-  color:white;
-}
+
 
 .product-card:hover {
   transform: scale(1.03);
@@ -257,7 +258,7 @@ footer a{
 }
 
 /*Footer Styles*/
-footer {
+body > footer {
   height:200px;
   padding: 40px;
   text-align: center;
@@ -268,6 +269,9 @@ footer {
 .footer-icon{
   padding: 0 5px 0 5px;
 
+}
+body >footer a{
+  color:white;
 }
 
 

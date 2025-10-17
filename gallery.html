@@ -7,6 +7,34 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
   <link href="common-style.css" rel="stylesheet">
+  <style>
+    .carousel-item img{
+        height:500px;
+        object-fit: cover;
+        border-radius: 100px;
+    }
+    .carousel-caption{
+        background-color: rgba(1, 1, 9, 0.766);
+        border-bottom-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+        padding:20px;
+        left:0;
+        right:0;
+        bottom:0;
+    }
+    .carousel:hover{
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+    .carousel{
+        transition: transform 0.3s ease;
+        box-shadow: 0 0 50px black;
+        border-radius: 100px;
+        background-color: rgba(0, 0, 0, 0.476);
+        margin-top: 50px !important;
+    }
+
+  </style>
 </head>
 <body>
   <header class="container-fluid bg-pan-left">
@@ -25,39 +53,113 @@
 
     <div class="bubble text-center" style="max-width: fit-content; justify-self: center">
                     <h2 class="display-5">
-                        Walkthrough my latest interests!
+                        Walkthrough my latest adventures!
                     </h2>
                 </div>
     <div class="container my-4"> 
         
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="max-width: 600px; margin: 0 auto;">
-        <div class="carousel-indicators">
+        <div class="carousel-indicators"><!--control the amount of carousel items here-->
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="11" aria-label="Slide 12"></button>
+
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="trees.png" class="d-block w-100 rounded-pill" alt="trees">
+            <img src="img/gallery/cooperstown.jpeg" class="d-block w-100" alt="trees">
             <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
+              <h5>Cooperstown NY</h5>
+              <p>Ate local seafood and explored the waterfront</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="img1.jpg" class="d-block w-100 rounded-pill" alt="bg">
+            <img src="img/gallery/lakegeorge.jpeg" class="d-block w-100" alt="bg">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
+              <h5>Lake George NY</h5>
+              <p>Visited the lakeside shoppes and rode on a cruise</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="ariBoat.png" class="d-block w-100 rounded-pill" alt="pfp">
+            <img src="img/gallery/flushing.jpeg" class="d-block w-100" alt="pfp">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
+              <h5>Flushing Queens NY</h5>
+              <p>Born and raised in Queens and revisiting the local scene</p>
             </div>
           </div>
+          <div class="carousel-item">
+            <img src="img/gallery/liberty.jpeg" class="d-block w-100" alt="pfp">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>New York NY</h5>
+              <p>Tourist cruise to visit Lady Liberty</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/gallery/niagara1.jpeg" class="d-block w-100" alt="pfp">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Niagara Falls, Canada</h5>
+              <p>Family trip to the Falls</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/gallery/niagara2.jpeg" class="d-block w-100" alt="pfp">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Niagara Falls, Canada</h5>
+              <p>Family trip to the Falls</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/gallery/prflight.jpeg" class="d-block w-100" alt="pfp">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>JFK Airport NY</h5>
+              <p>Family trip to Puerto Rico</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/gallery/prespinar.jpeg" class="d-block w-100" alt="pfp">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Espinar Puerto Rico</h5>
+              <p>Visiting the local beach scene</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/gallery/prsanjuan.jpeg" class="d-block w-100" alt="pfp">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>San Juan Puerto Rico</h5>
+              <p>Visiting the busy and colorful city</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/gallery/prresort.jpeg" class="d-block w-100" alt="pfp">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Aguadilla Puerto Rico</h5>
+              <p>Visiting family and enjoying the warm climate</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/gallery/deer.jpeg" class="d-block w-100" alt="pfp">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Coxsackie NY</h5>
+              <p>Home visit from a friendly deer</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/gallery/ualbany.jpg" class="d-block w-100" alt="pfp">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>University at Albany NY</h5>
+              <p>Daily educational adventure at UA!</p>
+            </div>
+          </div>
+          
         </div>
 
         <!-- Controls -->
@@ -72,6 +174,18 @@
       </div>
     </div>
   </main>
+<footer>
+    <p>Author: Ariana Nieves
+      <br><a href="mailto:acnieves@albany.edu">acnieves@albany.edu</a>
+    </p>
+    <div>
+      <i class="bi bi-github footer-icon"></i>
+      <i class="bi bi-linkedin footer-icon"></i> 
+      <i class="bi bi-instagram footer-icon" ></i>         
+
+    </div>
+  </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
